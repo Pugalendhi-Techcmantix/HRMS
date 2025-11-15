@@ -8,7 +8,7 @@ export default defineConfig({
     host: "::",
     port: 8080,
     fs: {
-      allow: ["./client", "./shared"], // ❌ Removed Windows path
+      allow: ["./","./client", "./shared"], // ❌ Removed Windows path
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
   },
